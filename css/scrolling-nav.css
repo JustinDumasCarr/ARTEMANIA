@@ -20,11 +20,19 @@ html {
     text-align: center;
     background-image: url('https://s3.amazonaws.com/artemania/18789240_10212512372859424_180873538_o.png');
     background-repeat: no-repeat;
-    background-size: 120% 120%;
-    background-position: left -30px bottom -30px;
+    background-size: 130% 130%;
+    background-position: left -30px bottom -100px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.services-section {
+
+    padding: 70px;
+    padding-top: 100px;
+    text-align: center;
+    display:block;
+    overflow:auto;
 }
 
 @media (min-width: 767px) {
@@ -39,6 +47,17 @@ html {
         padding: 0;
     }
 
+    .thumbnail:hover {
+        z-index:10;
+        -webkit-transform:scale(1.5); /* Safari and Chrome */
+        -moz-transform:scale(1.5); /* Firefox */
+        -ms-transform:scale(1.5); /* IE 9 */
+        -o-transform:scale(1.5); /* Opera */
+        transform:scale(1.5);
+    }
+
+
+
 }
 
 
@@ -49,9 +68,7 @@ html {
 
 
     }
-    .intro-section{
-        background-size: 1000px 100%;
-    }
+
 
     /*.embed-responsive{*/
     /*height:300px;*/
@@ -65,9 +82,15 @@ font-weight: bold;
     }
     .intro-section{
 
-        background-size: 1000px 100%;
+        background-size: 1100px 776px;
+        background-position: left -30px bottom -50px;
     }
 
+    .services-section {
+
+        padding: 10px;
+        padding-top: 50px;
+    }
 
     /*.embed-responsive{*/
     /*height:300px;*/
@@ -79,6 +102,14 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 
+.resize-logo {
+    padding: 0px;
+}
+.resize-logo>img {
+    height: 100%;
+    padding: 2px;
+    width: 70px;
+}
 .about-section {
     height: 100%;
     padding-top: 150px;
@@ -86,14 +117,7 @@ of those sections to manage the look and feel of the site. */
     background: #eee;
 }
 
-.services-section {
 
-    padding: 70px;
-    padding-top: 100px;
-    text-align: center;
-    display:block;
-    overflow:auto;
-}
 
 .contact-section {
     height: 100%;
@@ -141,11 +165,11 @@ of those sections to manage the look and feel of the site. */
 .title {
     margin: auto;
     font-size: 100px;
-    text-shadow:
-            -1px -1px 0 #fff,
-            1px -1px 0 #fff,
-            -1px 1px 0 #fff,
-            1px 1px 0 #fff;
+    /*text-shadow:*/
+            /*-1px -1px 0 #fff,*/
+            /*1px -1px 0 #fff,*/
+            /*-1px 1px 0 #fff,*/
+            /*1px 1px 0 #fff;*/
     text-align: center;
     -webkit-animation-delay:2s;
     animation-delay: 2s;
@@ -165,17 +189,14 @@ of those sections to manage the look and feel of the site. */
     -ms-transition: all 0.5s ease; /* IE 9 */
     -o-transition: all 0.5s ease; /* Opera */
     transition: all 0.5s ease;
+    border: 0px;
+}
+
+.modal-body{
+    padding: 0px !important;
 }
 
 
-.thumbnail:hover {
-    z-index:10;
-    -webkit-transform:scale(1.5); /* Safari and Chrome */
-    -moz-transform:scale(1.5); /* Firefox */
-    -ms-transform:scale(1.5); /* IE 9 */
-    -o-transform:scale(1.5); /* Opera */
-    transform:scale(1.5);
-}
 
 .fade-in {
     opacity: 0;
@@ -192,7 +213,25 @@ of those sections to manage the look and feel of the site. */
     -moz-animation-duration: 1s;
     animation-duration: 1s;
 }
+.nav-fade-in {
+    opacity: 0;
+    opacity: 1 \9; /*just in case ie*/
+    -webkit-animation: fadeIn ease-in 1s;
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1s;
 
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    animation-duration: 2s;
+
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    animation-delay: 2s;
+}
 .fade-in.one {
     -webkit-animation-delay: 0.1s;
     -moz-animation-delay: 0.1s;
