@@ -14,6 +14,19 @@ html {
     height: 100%;
 }
 
+.intro-section {
+    height: 100%;
+
+    text-align: center;
+    background-image: url('https://s3.amazonaws.com/artemania/18789240_10212512372859424_180873538_o.png');
+    background-repeat: no-repeat;
+    background-size: 120% 120%;
+    background-position: left -30px bottom -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (min-width: 767px) {
     .navbar {
         padding: 0px 0;
@@ -34,6 +47,10 @@ html {
     .fade-in {
         font-size: 60px !important;
 
+
+    }
+    .intro-section{
+        background-size: 1000px 100%;
     }
 
     /*.embed-responsive{*/
@@ -44,7 +61,13 @@ html {
     .fade-in {
         font-size: 22px !important;
 font-weight: bold;
+
     }
+    .intro-section{
+
+        background-size: 1000px 100%;
+    }
+
 
     /*.embed-responsive{*/
     /*height:300px;*/
@@ -55,15 +78,6 @@ font-weight: bold;
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
 of those sections to manage the look and feel of the site. */
 
-.intro-section {
-    height: 100%;
-
-    text-align: center;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .about-section {
     height: 100%;
@@ -127,6 +141,11 @@ of those sections to manage the look and feel of the site. */
 .title {
     margin: auto;
     font-size: 100px;
+    text-shadow:
+            -1px -1px 0 #fff,
+            1px -1px 0 #fff,
+            -1px 1px 0 #fff,
+            1px 1px 0 #fff;
     text-align: center;
     -webkit-animation-delay:2s;
     animation-delay: 2s;
