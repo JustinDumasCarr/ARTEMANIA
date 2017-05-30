@@ -22,7 +22,18 @@ footer{
     padding: 1em;
 
 }
+.middle-logo{
 
+
+position:relative;
+    top:70px;
+
+}
+.middle-logo>img {
+    height: 70px;
+    padding: 2px;
+    width: 100px;
+}
 .intro-section {
     height: 100%;
 
