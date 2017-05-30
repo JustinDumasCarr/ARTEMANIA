@@ -13,6 +13,15 @@ html {
     width: 100%;
     height: 100%;
 }
+p {
+
+}
+
+footer{
+
+    padding: 1em;
+
+}
 
 .intro-section {
     height: 100%;
@@ -64,11 +73,12 @@ html {
 
 @media (max-width: 1000px) {
     .fade-in {
-        font-size: 60px !important;
-
+        font-size: 70px !important;
 
     }
-
+.intro-text{
+    font-size: 30px;
+}
 
     /*.embed-responsive{*/
     /*height:300px;*/
@@ -79,6 +89,9 @@ html {
         font-size: 22px !important;
 font-weight: bold;
 
+    }
+    .intro-text{
+        font-size: 16px;
     }
     .intro-section{
 
@@ -179,6 +192,18 @@ of those sections to manage the look and feel of the site. */
     -o-animation: fadein 4s; /* Opera < 12.1 */
     animation: fadein 4s;
 
+
+}
+.intro-text{
+
+    color: white;
+    -webkit-animation-delay:2s;
+    animation-delay: 2s;
+    -webkit-animation: fadein 8s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 8s; /* Firefox < 16 */
+    -ms-animation: fadein 8s; /* Internet Explorer */
+    -o-animation: fadein 8s; /* Opera < 12.1 */
+    animation: fadein 8s;
 
 }
 
