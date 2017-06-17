@@ -41,17 +41,25 @@ position:absolute;
     height: 100%;
 
     text-align: center;
-    background-image: url('../background.png');
+    background-image: url('../pexels-photo-26559.jpg');
     background-repeat: no-repeat;
+
     background-size: 100% 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+
+}
+.side-photo{
+    height:100%;
+    background-image: url("../forrest.jpg");
+    background-repeat: no-repeat;
+    width:100%;
 }
 .services-section {
+position: relative;
+    padding: 0px;
 
-    padding: 70px;
-    padding-top: 100px;
     text-align: center;
     display:block;
     overflow:auto;
@@ -69,14 +77,14 @@ position:absolute;
         padding: 0;
     }
 
-    .thumbnail:hover {
-        z-index:10;
-        -webkit-transform:scale(1.5); /* Safari and Chrome */
-        -moz-transform:scale(1.5); /* Firefox */
-        -ms-transform:scale(1.5); /* IE 9 */
-        -o-transform:scale(1.5); /* Opera */
-        transform:scale(1.5);
-    }
+    /*.thumbnail:hover {*/
+        /*z-index:10;*/
+        /*-webkit-transform:scale(1.5); !* Safari and Chrome *!*/
+        /*-moz-transform:scale(1.5); !* Firefox *!*/
+        /*-ms-transform:scale(1.5); !* IE 9 *!*/
+        /*-o-transform:scale(1.5); !* Opera *!*/
+        /*transform:scale(1.5);*/
+    /*}*/
 
 
 
@@ -109,12 +117,12 @@ font-weight: bold;
     .intro-section{
 
         background-size: 1100px 776px;
-        background-position: left -30px bottom -50px;
+
     }
 
     .services-section {
 
-        padding: 10px;
+        padding: 00px;
         padding-top: 50px;
     }
 
@@ -138,9 +146,39 @@ of those sections to manage the look and feel of the site. */
 }
 .about-section {
     height: 100%;
-    padding-top: 150px;
+
     text-align: center;
-    background: #eee;
+
+}.arbraska-section{
+
+     height: 100%;
+     text-align: center;
+     background: #eee;
+
+ }
+
+.price {
+
+
+    text-align: center;
+    background: #fff;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    font-size: 50px;
+    color: #000;
+    border-style: ridge;
+    border-width: 2px;
+    border-color: darkgreen;
+    line-height: 150px;
+    text-align: center;
+    background: #ffffff;
+    margin: auto;
 }
 
 
@@ -189,6 +227,7 @@ of those sections to manage the look and feel of the site. */
     }
 }
 .title {
+    color: #eeeeee;
     margin: auto;
     font-size: 100px;
     /*text-shadow:*/
@@ -225,6 +264,21 @@ of those sections to manage the look and feel of the site. */
     user-select: none;
 
 }
+.price-card{
+    height:100%;
+    text-align: center;
+    width:300px;
+    margin: 0 auto;
+
+}
+.flex-center{
+    display:flex;
+    align-items:center;
+}
+.a-width{
+    width:500px;
+}
+
 
 .thumbnail{
     position: relative;
@@ -398,4 +452,155 @@ of those sections to manage the look and feel of the site. */
     to {
         opacity: 1;
     }
+}
+.no-margin{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+
+}
+.no-padding{
+
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+}
+
+
+.icon-circle .fa{
+    font-size           : 25px;
+    color               : #e84700;
+    margin              : 0 auto;
+    height              : 80px;
+    width               : 80px;
+    border-radius       : 50%;
+    border              :2px solid #e84700;
+    line-height         : 80px;
+    cursor              : pointer;
+    -webkit-transition  : all  ease-in-out 0.35s;
+    -moz-transition     : all  ease-in-out 0.35s;
+    -o-transition       : all  ease-in-out 0.35s;
+    -ms-transition      : all  ease-in-out 0.35s;
+    transition          : all  ease-in-out 0.20s,background-color ease-in-out 0.05s;
+}
+
+.icon-circle  .fa:hover{
+
+    background-color        : #e84700;
+    color                   : #fff;
+    border                  : 1px solid #e84711;
+    -moz-box-shadow         : inset 0px 0px 0px 5px #ffffff;
+    -o-box-shadow           : inset 0px 0px 0px 5px #ffffff;
+    -ms-box-shadow          : inset 0px 0px 0px 5px #ffffff;
+    -webkit-box-shadow      : inset 0px 0px 0px 5px #ffffff;
+    box-shadow              : inset 0px 0px 0px 5px #ffffff;
+    -ms-transform           : scale(1.2,1.2);
+    -webkit-transform       : scale(1.2,1.2);
+    -moz-transform          : scale(1.2,1.2);
+    -o-transform            : scale(1.2,1.2);
+    transform               : scale(1.2,1.2);
+}
+
+.icon-circle  i:before{
+    margin-left         : 0px;
+    font-size           : 40px;
+}
+
+@media (min-width:320px) and (max-width:768px) {
+
+
+    .icon-circle .fa{
+        font-size           : 15px;
+        color               : #e84700;
+        margin              : 0 auto;
+        height              : 40px;
+        width               : 40px;
+        border-radius       : 50%;
+        border              :2px solid #e84700;
+        line-height         : 40px;
+        cursor              : pointer;
+        -webkit-transition  : all  ease-in-out 0.35s;
+        -moz-transition     : all  ease-in-out 0.35s;
+        -o-transition       : all  ease-in-out 0.35s;
+        -ms-transition      : all  ease-in-out 0.35s;
+        transition          : all  ease-in-out 0.20s,background-color ease-in-out 0.05s;
+    }
+
+    .icon-circle  .fa:hover{
+
+        background-color        : #e84700;
+        color                   : #fff;
+        border                  : 1px solid #e84711;
+        -moz-box-shadow         : inset 0px 0px 0px 5px #ffffff;
+        -o-box-shadow           : inset 0px 0px 0px 5px #ffffff;
+        -ms-box-shadow          : inset 0px 0px 0px 5px #ffffff;
+        -webkit-box-shadow      : inset 0px 0px 0px 5px #ffffff;
+        box-shadow              : inset 0px 0px 0px 5px #ffffff;
+        -ms-transform           : scale(1.2,1.2);
+        -webkit-transform       : scale(1.2,1.2);
+        -moz-transform          : scale(1.2,1.2);
+        -o-transform            : scale(1.2,1.2);
+        transform               : scale(1.2,1.2);
+    }
+
+    .icon-circle  i:before{
+        margin-left         : 0px;
+        font-size           : 20px;
+    }
+}
+
+.ifacebook .fa{
+    color               :#3B5998;
+    border              :2px solid #3B5998;
+}
+
+.ifacebook .fa:hover{
+
+    background-color        : #3B5998;
+    color                   : #fff;
+    border                  : 1px solid #3B5998;
+
+}
+
+.itwittter .fa{
+    color               : #33ccff;
+    border              :2px solid #33ccff;
+}
+
+.itwittter .fa:hover{
+
+    background-color        : #33ccff;
+    color                   : #fff;
+    border                  : 1px solid #33ccff;
+
+}
+
+.igoogle .fa{
+    color               : #BD3518;
+    border              :2px solid #BD3518;
+}
+
+.igoogle .fa:hover{
+
+    background-color        : #BD3518;
+    color                   : #fff;
+    border                  : 1px solid #BD3518;
+
+}
+
+.iLinkedin .fa{
+    color               : #007bb7;
+    border              :2px solid #007bb7;
+}
+
+.iLinkedin .fa:hover{
+
+    background-color        :#007bb7;
+    color                   : #fff;
+    border                  : 1px solid #007bb7;
+
+}
+
+.maps iframe{
+    pointer-events: none;
 }
